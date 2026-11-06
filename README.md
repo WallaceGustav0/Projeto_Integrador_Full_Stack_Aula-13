@@ -4,6 +4,12 @@ Aplicação didática para gestão de reservas de laboratórios, desenvolvida co
 
 O [questionário investigativo respondido](documentos/Questionario_Investigativo_Resolvido.md) acompanha o projeto e explica cada uma das 24 questões com referências aos ficheiros e funções correspondentes.
 
+## Integrantes
+1. Ângelo Mateus - 202323348
+2. Esequias Ferraz De Andrade - 202412524
+3. Juberto Junior Marques Coutinho - 202321179
+4. Wallace Gustavo Da Silva - 202411248
+
 ## Funcionalidades
 
 - Criar, consultar, editar e excluir reservas.
