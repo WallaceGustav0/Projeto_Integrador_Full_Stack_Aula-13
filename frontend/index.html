@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservas de Laboratórios</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1>Reservas de Laboratórios</h1><p>Projeto integrador Full Stack</p></header>
+  <main>
+    <section>
+      <h2>Nova reserva</h2>
+      <form id="form-reserva">
+        <input type="hidden" id="reserva-id">
+        <label>Laboratório <input id="laboratorio" required minlength="3" value="Laboratório 101"></label>
+        <label>Data <input id="data-reserva" type="date" required></label>
+        <label>Turno <select id="turno"><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select></label>
+        <label>Responsável <input id="responsavel" required minlength="3" value="Grupo A"></label>
+        <label>Quantidade <input id="quantidade" type="number" min="1" max="40" value="20" required></label>
+        <label>Finalidade <input id="finalidade" required minlength="5" value="Aula prática Full Stack"></label>
+        <div class="acoes"><button type="submit">Salvar</button><button type="button" id="cancelar">Cancelar edição</button></div>
+      </form>
+      <p id="mensagem" role="status"></p>
+    </section>
+    <section>
+      <h2>Consulta</h2>
+      <div class="filtros"><input id="filtro-laboratorio" placeholder="Filtrar laboratório"><select id="filtro-turno"><option value="">Todos os turnos</option><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select><button id="filtrar">Filtrar</button></div>
+      <p id="resumo"></p>
+      <table><thead><tr><th>ID</th><th>Laboratório</th><th>Data</th><th>Turno</th><th>Responsável</th><th>Ações</th></tr></thead><tbody id="lista"></tbody></table>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
